@@ -14,3 +14,15 @@
 4. 下发PLC升级程序
 5. 支持规则引擎
 6. 支持S7协议的TCP和RTU模式
+
+## 编译
+
+```
+CGO_ENABLED=1 GOARM=7 GOOS=linux GOARCH=arm CC=arm-linux-gnueabi-gcc go build -ldflags "-s -w -linkmode external -extldflags -static"
+```
+
+## 上传
+
+```
+scp ./smart-gateway root@192.168.1.101:/root/
+```

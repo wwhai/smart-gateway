@@ -43,7 +43,7 @@ func main() {
 			"timeout":   5,
 			"frequency": 5,
 			"config": map[string]interface{}{
-				"uart":     "COM4",
+				"uart":     "/dev/ttyUSB0",
 				"dataBits": 8,
 				"parity":   "N",
 				"stopBits": 1,
